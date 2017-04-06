@@ -138,7 +138,8 @@ extension ViewController {
     /*
      * get a "short" version of given fullName by dropping the first letter of this name
      */
-    func getShortName(_ name: String) -> String? {
+    func getShortName(
+       _ name: String) -> String? {
         
         if name.isEmpty { return nil }
         
