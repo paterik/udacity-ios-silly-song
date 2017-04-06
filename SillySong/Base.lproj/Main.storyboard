@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SillySong" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_background_v1" translatesAutoresizingMaskIntoConstraints="NO" id="NHo-c6-yJJ" userLabel="ui_static_img_background">
+                                <rect key="frame" x="16" y="20" width="343" height="639"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Enter Your Name" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="9lc-xz-zEc" userLabel="ui_inp_userName">
+                                <rect key="frame" x="70" y="317" width="235" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="5GK-md-bbX"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Generate A Silly Song!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3h-ZQ-Eve" userLabel="ui_lbl_appTitle">
+                                <rect key="frame" x="16" y="20" width="343" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="pTF-sp-AX0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" red="0.071262948215007782" green="0.65681988000869751" blue="0.81567949056625366" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" red="0.071262948219999997" green="0.65681988000000002" blue="0.8156794906" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" indicatorStyle="black" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="haF-iM-plT" userLabel="ui_lbl_userSongLyrics">
+                                <rect key="frame" x="16" y="393" width="343" height="254"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16520005464553833" green="0.77450424432754517" blue="0.94191426038742065" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="NHo-c6-yJJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="20O-QH-tD1"/>
+                            <constraint firstItem="9lc-xz-zEc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="54" id="3xg-Nj-yig"/>
+                            <constraint firstAttribute="bottom" secondItem="haF-iM-plT" secondAttribute="bottom" constant="20" symbolic="YES" id="CPD-jY-UA1"/>
+                            <constraint firstItem="B3h-ZQ-Eve" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="IhH-Vz-ZOl"/>
+                            <constraint firstItem="NHo-c6-yJJ" firstAttribute="centerY" secondItem="9lc-xz-zEc" secondAttribute="centerY" id="Jtf-l1-ABK"/>
+                            <constraint firstItem="9lc-xz-zEc" firstAttribute="centerX" secondItem="haF-iM-plT" secondAttribute="centerX" id="Jwd-qw-dWD"/>
+                            <constraint firstItem="B3h-ZQ-Eve" firstAttribute="trailing" secondItem="haF-iM-plT" secondAttribute="trailing" id="R8X-87-N4h"/>
+                            <constraint firstItem="haF-iM-plT" firstAttribute="top" secondItem="9lc-xz-zEc" secondAttribute="bottom" constant="32" id="S9I-eP-a5q"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NHo-c6-yJJ" secondAttribute="bottom" constant="8" symbolic="YES" id="U56-hA-QSZ"/>
+                            <constraint firstItem="B3h-ZQ-Eve" firstAttribute="leading" secondItem="haF-iM-plT" secondAttribute="leading" id="VTo-iz-kPd"/>
+                            <constraint firstItem="B3h-ZQ-Eve" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Zit-Km-sXc"/>
+                            <constraint firstItem="B3h-ZQ-Eve" firstAttribute="leading" secondItem="NHo-c6-yJJ" secondAttribute="leading" id="apx-Bx-gfe"/>
+                            <constraint firstItem="NHo-c6-yJJ" firstAttribute="top" secondItem="B3h-ZQ-Eve" secondAttribute="top" id="d8k-a3-BdG"/>
+                            <constraint firstItem="NHo-c6-yJJ" firstAttribute="trailing" secondItem="haF-iM-plT" secondAttribute="trailing" id="o7j-pI-9bH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblAppTitle" destination="B3h-ZQ-Eve" id="ory-q3-qtm"/>
+                        <outlet property="lyricsView" destination="haF-iM-plT" id="1u1-j2-qRg"/>
+                        <outlet property="nameField" destination="9lc-xz-zEc" id="En6-Y3-YFm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="app_background_v1" width="750" height="1334"/>
+    </resources>
+</document>
