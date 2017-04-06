@@ -65,6 +65,7 @@ class ViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate 
         
         UIApplication.shared.statusBarStyle = UIStatusBarStyle.default
         
+        // unsubscribe keyboard notification
         unSubscribeToKeyboardNotifications()
     }
     
@@ -72,6 +73,8 @@ class ViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate 
         
         super.viewWillAppear(animated)
         
+        // add keyboard notification subscription to handle keyboard movement
+        // on any device direction and prevent input field overlay issue(s)
         subscribeToKeyboardNotifications()
         nameField.delegate = self
     }
