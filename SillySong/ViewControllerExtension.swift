@@ -152,6 +152,9 @@ extension ViewController {
         
         if name.isEmpty { completionHandlerForNameShortable(false, 0) }
         
+        let _nameLength = name.lengthOfBytes(using: .utf8)
+        var _lastPos = _nameLength
+        
         for _vowel in vowels {
             // convert vowel to real character
             let vowel = Character(_vowel)
@@ -160,12 +163,17 @@ extension ViewController {
                 // evaluate real position inside that name
                 let pos = name.characters.distance(from: name.startIndex, to: _index)
                 
+                if pos < _lastPos { _lastPos = pos }
+                
                 if debugMode { print("found a valid vowel (\(vowel)) at position: [\(pos)]") }
-                // validate true if position of that vowel > 0 (so names starting with a vowel will be ignored)
-                completionHandlerForNameShortable(pos > 0, pos)
-                // and leave
-                return
             }
+        }
+        
+        if _lastPos != _nameLength {
+            // validate true if position of that vowel > 0 (so names starting with a vowel will be ignored)
+            completionHandlerForNameShortable(_lastPos > 0, _lastPos)
+            
+            return
         }
         
         completionHandlerForNameShortable(false, 0)
