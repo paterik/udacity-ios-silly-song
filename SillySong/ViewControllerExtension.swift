@@ -126,24 +126,69 @@ extension ViewController {
        _ lyricsTemplate: String,
        _ fullName: String) -> String {
       
-        let shortName = getShortName(fullName)
+        if let shortName = getShortName(fullName) {
         
-        let lyrics: String = lyricsTemplate
-            .replacingOccurrences(of: "<SHORT_NAME>", with: shortName!)
-            .replacingOccurrences(of: "<FULL_NAME>", with: fullName.capitalizingFirstLetter())
+            let lyrics: String = lyricsTemplate
+                .replacingOccurrences(of: "<SHORT_NAME>", with: shortName)
+                .replacingOccurrences(of: "<FULL_NAME>", with: fullName.capitalizingFirstLetter())
+            
+            return lyrics
+        }
         
-        return lyrics
+        return ""
     }
     
     /*
-     * get a "short" version of given fullName by dropping the first letter of this name
+     * check for shortable name, return position of first vowel or false if position is 0 || no occurance found
+     */
+    func isNameShortable (
+       _ name: String,
+        
+         completionHandlerForNameShortable: @escaping (
+       _ success: Bool?,
+       _ vowelPosition: Int?)
+        
+        -> Void) {
+        
+        if name.isEmpty { completionHandlerForNameShortable(false, 0) }
+        
+        for _vowel in vowels {
+            // convert vowel to real character
+            let vowel = Character(_vowel)
+            // determine index position of that char inside name
+            if let _index = name.characters.index(of: vowel) {
+                // evaluate real position inside that name
+                let pos = name.characters.distance(from: name.startIndex, to: _index)
+                
+                if debugMode { print("found a valid vowel (\(vowel)) at position: [\(pos)]") }
+                // validate true if position of that vowel > 0 (so names starting with a vowel will be ignored)
+                completionHandlerForNameShortable(pos > 0, pos)
+                // and leave
+                return
+            }
+        }
+        
+        completionHandlerForNameShortable(false, 0)
+    }
+    
+    /*
+     * get the shorten version of given name using pre-validator function isNameShortable
      */
     func getShortName(
        _ name: String) -> String? {
         
         if name.isEmpty { return nil }
         
-        return String(name.characters.dropFirst())
+        var _name = name.lowercased()
+        
+        isNameShortable(_name) {
+            
+            (success, position) in
+        
+            if success == true { _name = _name.substring(from: position!) }
+        }
+        
+        return _name
     }
     
     /*
