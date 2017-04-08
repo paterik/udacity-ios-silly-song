@@ -4,8 +4,20 @@ All notable changes of SillySong release series are documented in this file usin
 
 _This SilliSong prject changelog documentation start with version 1.0.0 (2017-04-06)_
 
-## [1.0.0], 2017-04-06:
+## [1.0.1], 2017-04-08:
 _current_
+
+### Added
+
+* add new isNameShortable helper method
+
+### Fixed
+
+* fix bug in getShortName() method
+* fix background-image bug in landscape input mode
+
+
+## [1.0.0], 2017-04-06:
 
 ### Added
 
