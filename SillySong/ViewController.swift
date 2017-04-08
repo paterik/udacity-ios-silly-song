@@ -22,12 +22,14 @@ class ViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate 
     // MARK: Constants (Special)
     //
     
+    let debugMode: Bool = true
     let appCommon = AppCommon.sharedInstance
     
     //
     // MARK: Constants (Normal)
     //
     
+    let vowels = ["a","e","i","o","u"]
     let lyricFontNames = ["HelveticaNeue-CondensedBlack", "Impact", "Futura-CondensedExtraBold"]
     let lyricFontNameFallback = "Arial"
     let lyricFontSize: CGFloat = 28.0
