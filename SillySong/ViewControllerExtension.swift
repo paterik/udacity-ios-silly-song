@@ -244,7 +244,7 @@ extension ViewController {
     func textFieldShouldReturn(
        _ textField: UITextField) -> Bool {
         
-        self.view.endEditing(true)
+        view.endEditing(true)
         
         if textField.text == nil || textField.text!.isEmpty {
             lyricsView.text = ""
