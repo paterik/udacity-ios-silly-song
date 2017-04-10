@@ -2,10 +2,17 @@
 
 All notable changes of SillySong release series are documented in this file using the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
 
-_This SilliSong prject changelog documentation start with version 1.0.0 (2017-04-06)_
+_This SillySong prject changelog documentation start with version 1.0.0 (2017-04-06)_
+
+## [1.0.2], 2017-04-10:
+_current_
+
+### Added
+
+* documentation
+
 
 ## [1.0.1], 2017-04-08:
-_current_
 
 ### Added
 
