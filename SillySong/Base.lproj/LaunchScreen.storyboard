@@ -38,13 +38,13 @@
                         </subviews>
                         <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="i2Q-hW-dYE" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="77q-jp-dh3"/>
                             <constraint firstAttribute="trailing" secondItem="i2Q-hW-dYE" secondAttribute="trailing" id="A18-OX-mKX"/>
                             <constraint firstItem="i2Q-hW-dYE" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="DGr-Ej-rpf"/>
                             <constraint firstItem="i2Q-hW-dYE" firstAttribute="top" secondItem="Pyz-bf-Hc2" secondAttribute="top" id="JCH-5n-UOB"/>
                             <constraint firstItem="Pyz-bf-Hc2" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="KB7-LP-a34"/>
-                            <constraint firstItem="i2Q-hW-dYE" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="8" symbolic="YES" id="ih3-Wm-CP1"/>
+                            <constraint firstItem="i2Q-hW-dYE" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="gOH-MF-0o6"/>
                             <constraint firstItem="Pyz-bf-Hc2" firstAttribute="centerX" secondItem="i2Q-hW-dYE" secondAttribute="centerX" id="j7N-1d-8KR"/>
+                            <constraint firstItem="i2Q-hW-dYE" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="8" symbolic="YES" id="wns-5y-63U"/>
                         </constraints>
                     </view>
                 </viewController>
