@@ -47,7 +47,7 @@ SillySong is currently available in [3 releases](https://github.com/paterik/udac
 
 ## Changelog
 
-All notable changes of the SillySong release series are documented in project [CHANGELOG.md](CHANGELOG.md) file using the [Keep a CHANGELOG](http://keepachangelog.com/) prtheinciples. The changelog documentation starts with version 1.0.0 (2017-04-06). The latest „reviewed“ version of OTM met the specifications to accomplish the course sub goal. 
+All notable changes of the SillySong release series are documented in project [CHANGELOG.md](CHANGELOG.md) file using the [Keep a CHANGELOG](http://keepachangelog.com/) prtheinciples. The changelog documentation starts with version 1.0.0 (2017-04-06). The latest „reviewed“ version of SillySong met the specifications to accomplish the course sub goal. 
 
 ## License-Term
 
