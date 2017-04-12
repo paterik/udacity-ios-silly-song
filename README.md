@@ -20,6 +20,8 @@ SillySong master (currently 1.0.2) using the latest XCode 8.3 (8E162) version an
 
 SillySong using an advanced keyboard handling to prevent keyboard-view overlay during input in landscape mode.
 
+*The next version (1.0.3) will be able to read your lyrics aloud using the iOS internal AVFoundation library *
+
 ## App Structure
 
 SillySong is following the MVC pattern by structural and logical definition. The app is using dedicated view partials instead of base sub views of table cells and annotations.
@@ -30,7 +32,7 @@ SillySong is following the MVC pattern by structural and logical definition. The
 
 Splash Screen             |  Welcome Screen
 :-------------------------:|:-------------------------:
-![splash screen](github/media/SS_launchScreen_v1.png)  |  ![start  screen](github/media/SS_startUp_v1.png)
+![splash screen](github/media/SS_launchScreen_v1.png)  |  ![welcome screen](github/media/SS_startUp_v1.png)
 
 ### EditView
 
@@ -47,7 +49,7 @@ SillySong is currently available in [3 releases](https://github.com/paterik/udac
 
 ## Changelog
 
-All notable changes of the SillySong release series are documented in project [CHANGELOG.md](CHANGELOG.md) file using the [Keep a CHANGELOG](http://keepachangelog.com/) prtheinciples. The changelog documentation starts with version 1.0.0 (2017-04-06). The latest „reviewed“ version of SillySong met the specifications to accomplish the course sub goal. 
+All notable changes of the SillySong release series are documented in project [CHANGELOG.md](CHANGELOG.md) file using the [Keep a CHANGELOG](http://keepachangelog.com/) principles. The changelog documentation starts with version 1.0.0 (2017-04-06). The latest „reviewed“ version of SillySong met the specifications to accomplish the course sub goal. 
 
 ## License-Term
 
